@@ -1,0 +1,53 @@
+:root{
+    --mainfont: 'Century Gothic', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #212623;
+    color: white;
+    font-family: var(--mainfont);
+    
+}
+
+
+
+.box{
+    width: 450px;
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 25px;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    box-shadow: 3px 3px 5px #212623;
+
+}
+.box-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    
+
+}
+.box h1{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    }
+
+.box h5{
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+.box p{
+    text-align: justify;
+}
