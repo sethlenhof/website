@@ -1,5 +1,6 @@
 :root{
     --mainfont: 'Century Gothic', sans-serif;
+    --gradient: linear-gradient(45deg, rgba(251,63,220,1) 0%, rgba(105,70,252,1) 100%);
 }
 
 body{
