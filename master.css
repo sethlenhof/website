@@ -1,9 +1,23 @@
+:root{
+    --mainfont: 'Century Gothic', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #212623;
+    color: white;
+    font-family: var(--mainfont);
+    
+}
+
 nav{
+    z-index: 2;
     top: 0;
     width: 97vw;
     height: 3.5rem;
     background: rgb(251,63,220);
-    background: linear-gradient(-45deg, rgba(251,63,220,1) 0%, rgba(105,70,252,1) 100%);
+    background: linear-gradient(45deg, rgba(251,63,220,1) 0%, rgba(105,70,252,1) 100%);
     display: grid;
     place-items: center;
     position: fixed;
@@ -18,8 +32,15 @@ nav{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+nav svg{
+    width: 3.5rem;
+    height: 3.5rem;
+    position: absolute;
+    left: 20px;
+
+}
 nav div{
-    padding: .5rem;
+    padding: .85rem;
 }
 nav a{
     font-family: inherit;
@@ -40,7 +61,7 @@ nav a:hover:not(.current){
 
 #socials{
     height: 3.75rem;
-    position: absolute;
+    /* position: absolute; */
     bottom: 1vh;
     padding-top: .6rem;
     padding-bottom: .6rem;
@@ -54,6 +75,8 @@ nav a:hover:not(.current){
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+
 }
 
 
