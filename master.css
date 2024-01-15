@@ -4,49 +4,53 @@
     --background: #212623;
 }
 
+
 body{
     margin: 0;
-    padding: 0;
-    background: #212623;
+    padding: 2px;
+    background: var(--gradient);
     color: white;
     font-family: var(--mainfont);
 }
 
-nav{
-    display: flex;
-    left: 0;
-    top: 0;
-    width: 12vw;
-    height: 35vh;
-    background: var(--gradient);
-    flex-direction: column;
-    justify-content: center;
-    transform: translateY(82.5%);
-    border-top-right-radius: 13px;
-    border-bottom-right-radius: 13px;
+.section{
+    margin: 1rem;
+    padding: 1rem;
+    background: var(--background);
 }
 
-nav li{
+#socials{
+    height: 3.75rem;
+    /* position: absolute; */
+    bottom: 1vh;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    left: 50vw;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(25px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+}
+#socials div{
+    position: relative;
+    display: inline-flex;
     list-style: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: left;
-    transition: all 0.3s ease;
-    padding: 0.5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
-nav ul{
-    padding: 0rem;
-    margin: 0;
-    
-}
-nav a {
+#socials div a{
+    color: grey;
     text-decoration: none;
+    font-size: 60px;
+    transition: all ease-in-out;
+}
+#socials div a:hover{
     color: white;
 }
-svg{
-    height: 7vh;
-    width: 15vh;
-    margin: 0;
-    padding: 0;
-}
-
