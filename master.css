@@ -41,6 +41,12 @@ body{
 #about h1{
     border-bottom: 0;
 }
+#about img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
 
 #socials{
     height: 3.75rem;
