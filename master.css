@@ -11,12 +11,35 @@ body{
     background: var(--gradient);
     color: white;
     font-family: var(--mainfont);
+    overflow-y: scroll;
 }
 
 .section{
     margin: 1rem;
     padding: 1rem;
     background: var(--background);
+    height: 97vh;
+}
+
+.section h1{
+    border-bottom: 2px solid white;
+    padding-bottom: .5rem;
+}
+
+#about{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#about p{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+
+}
+#about h1{
+    border-bottom: 0;
 }
 
 #socials{
