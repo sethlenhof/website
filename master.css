@@ -4,7 +4,10 @@
     --background: #212623;
 }
 
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 body{
     margin: 0;
     padding: 2px;
@@ -12,6 +15,26 @@ body{
     color: white;
     font-family: var(--mainfont);
     overflow-y: scroll;
+}
+h2{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(25px);
+    position: fixed;
+    width: 95vw;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
 }
 
 .section{
@@ -24,6 +47,35 @@ body{
 .section h1{
     border-bottom: 2px solid white;
     padding-bottom: .5rem;
+}
+
+.project-bullets{
+    padding-left: 2rem;
+    padding-top: 1rem;
+    margin: 0px;
+    list-style: circle;
+
+}
+
+.project {
+    padding-left: 0.5rem;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center; /* Optional: Aligns the items vertically in the center */
+
+}
+
+.project .project-name{
+    margin-right: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.project .time {
+    font-weight: normal;
+    margin-left: 10px;
+    margin: 0px;
+
 }
 
 #about{
@@ -44,7 +96,7 @@ body{
 #about img{
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 15%;
     margin-bottom: 1rem;
 }
 
