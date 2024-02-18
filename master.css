@@ -78,6 +78,27 @@ h2{
 
 }
 
+#start{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#start p{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+#start h1{
+    border-bottom: 0;
+}
+#start img{
+    width: 200px;
+    height: 200px;
+    border-radius: 15%;
+    margin-bottom: 1rem;
+}
+
 #about{
     align-items: center;
     display: flex;
@@ -88,16 +109,9 @@ h2{
     text-align: center;
     font-size: 1.5rem;
     padding: 1rem;
-
 }
 #about h1{
     border-bottom: 0;
-}
-#about img{
-    width: 200px;
-    height: 200px;
-    border-radius: 15%;
-    margin-bottom: 1rem;
 }
 
 #socials{
