@@ -1,0 +1,69 @@
+#about-columns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+#about-resume {
+    width: 40vw;
+    padding: 20px;
+}
+
+#about-text{
+    color: #fff;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+    width: 40vw;
+    padding: 20px;
+}
+
+#about-text h3{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: normal;
+}
+
+#framingOut{
+    position: relative;
+    align-self: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 0.1rem;
+    margin: 0;
+    width: 30vw;
+    height: 45vh;
+    background: var(--gradient);
+}
+
+#framingIn{
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 30vw;
+    height: 45vh;
+    background: var(--background); 
+}
+
+#framingOut h3{
+    margin: 0;
+    font-weight: normal ;
+    text-align: justify;
+    padding: 1rem;
+}
+#document {
+    display: flex;
+    aspect-ratio: 8.5/11;
+    border: none;
+    height: 40vh;
+    margin-bottom: 8px;
+}

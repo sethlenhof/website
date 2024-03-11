@@ -91,7 +91,7 @@ nav a:hover:not(.current){
     padding-left: 0.5rem;
     padding-top: 1rem;
     display: flex;
-    align-items: center; /* Optional: Aligns the items vertically in the center */
+    align-items: center;
 
 }
 
@@ -129,7 +129,6 @@ nav a:hover:not(.current){
     border-radius: 15%;
     margin-bottom: 1rem;
 }
-
 
 .box{
     width: 450px;
@@ -179,140 +178,6 @@ nav a:hover:not(.current){
     font-size: 40px;
     letter-spacing: 4px;
     }
-
-#about-columns {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 20px 0;
-}
-
-#about-resume {
-    width: 40vw;
-    padding: 20px;
-}
-
-#about-text{
-    color: #fff;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    border-radius: 10px;
-    width: 40vw;
-    padding: 20px;
-}
-
-#about-text h3{
-    padding-left: 20px;
-    padding-right: 20px;
-    font-weight: normal;
-}
-
-#framingOut{
-    position: relative;
-    align-self: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    justify-content: center;
-    padding: 0.1rem;
-    margin: 0;
-    width: 30vw;
-    height: 45vh;
-    background: var(--gradient);
-}
-
-#framingIn{
-    position: relative;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    width: 30vw;
-    height: 45vh;
-    background: var(--background); 
-}
-
-#framingOut h3{
-    margin: 0;
-    font-weight: normal ;
-    text-align: justify;
-    padding: 1rem;
-}
-#document {
-    display: flex;
-    aspect-ratio: 8.5/11;
-    border: none;
-    height: 40vh;
-    margin-bottom: 8px;
-}
-
-.horizontal-section {
-    display: flex;
-    justify-content: space-around; /* Adjust this as needed */
-    align-items: center;
-}
-
-.summary {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-    border: solid #fff;
-    border-radius: 20px;
-    width: 44vw;
-    height: 28vh;
-    overflow: hidden;
-    color: #000;
-}
-
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background: var(--gradient); */
-    background-color: beige;
-    filter: blur(0px);
-    z-index: 0;
-    transition: filter 0.5s ease;
-}
-
-.summary:hover .background{
-    filter: blur(15px);
-    z-index: 0;
-}
-
-.content-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    box-sizing: border-box;
-}
-
-#LMlogo, #AppleLogo {
-    object-fit: contain;
-    padding: 2rem;
-}
-
-.content-wrapper h2 {
-    padding-bottom: 1rem;
-}
-
-.spacer{
-    flex-grow: 1;
-}
 
 #socials{
     height: 3.75rem;
