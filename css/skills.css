@@ -1,0 +1,231 @@
+/* This file contains the styling for the skills section of the website */
+:root{
+    --c-width: 50%;
+    --java-width: 85%;
+    --javascript-width: 65%;
+    --macos-width: 85%;
+    --python-width: 60%;
+    --sql-width: 65%;
+    --slack-width: 70%;
+    --windows-width: 80%;
+    --linux-width: 75%;
+    --git-width: 70%;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.skill h1{
+    text-align: center;
+}
+.skill h3{
+    margin:5px;
+}
+
+.skill{
+    width: 40vw;
+    margin: 60px auto;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+}
+
+.skill li{
+    margin: 1rem;
+    padding: 0.1rem;
+    list-style: none;
+}
+
+.bar{
+    background: black;
+    display: block;
+    height: 20px;
+    border: 1 px solid rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: var(--gradient);
+}
+
+.C.animate{
+    width: var(--c-width);
+    animation: C 1.5s;
+    animation-delay: var(--animation-delay, 0s);
+}
+.Java.animate{
+    width: var(--java-width);
+    animation: Java 1.5s;
+    animation-delay: var(--animation-delay, 0s);
+}
+.JavaScript.animate{
+    width: var(--javascript-width);
+    animation: JavaScript 1.5s;
+    animation-delay: var(--animation-delay, 0s);
+}
+.MacOS.animate{
+    width: var(--macos-width);
+    animation: MacOS 1.5s;
+    animation-delay: var(--animation-delay, 0s);
+}
+.Windows.animate{
+    width: var(--windows-width);
+    animation: Windows 1.5s;
+    animation-delay: var(--animation-delay, 0s);
+}
+.Slack.animate{
+    width: var(--slack-width);
+    animation: Slack 1.5s;
+    animation-delay: var(--animation-delay, 0s);
+}
+.Python.animate{
+    width: var(--python-width);
+    animation: Python 1.5s;
+    animation-delay: var(--animation-delay, 0s);
+}
+.SQL.animate{
+    width: var(--sql-width);
+    animation: SQL 1.5s;
+    animation-delay: var(--animation-delay, 0s);
+}
+
+.Linux.animate{
+    width: var(--linux-width);
+    animation: Linux 1.5s;
+    animation-delay: var(--animation-delay, 0s);
+}
+
+.Git.animate{
+    width: var(--git-width);
+    animation: Git 1.5s;
+    animation-delay: var(--animation-delay, 0s);
+}
+
+.C{
+    width: 0px;
+}
+.Java{
+    width: 0px;
+}
+.JavaScript{
+    width: 0px;
+}
+.MacOS{
+    width: 0px;
+}
+.Windows{
+    width: 0px;
+}
+.Slack{
+    width: 0px;
+}
+.Python{
+    width: 0px;
+}
+.SQL{
+    width: 0px;
+}
+
+.Linux{
+    width: 0px;
+}
+
+.Git{
+    width: 0px;
+}
+
+@keyframes C {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: var(--c-width);
+    }
+}
+@keyframes Java {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: var(--java-width);
+    }
+}
+@keyframes JavaScript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: var(--javascript-width);
+    }
+}
+@keyframes MacOS {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: var(--macos-width);
+    }
+}
+@keyframes Windows {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: var(--windows-width);
+    }
+}
+@keyframes Slack {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: var(--slack-width);
+    }
+}
+@keyframes Python {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: var(--python-width);
+    }
+}
+
+@keyframes SQL {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: var(--sql-width);
+    }
+}
+
+@keyframes Linux {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: var(--linux-width);
+    }
+}
+
+@keyframes Git {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: var(--git-width);
+    }
+}
