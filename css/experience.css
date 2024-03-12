@@ -74,7 +74,9 @@
 }
 
 .modal {
-    display: none;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
     position: fixed;
     z-index: 2;
     left: 0;
@@ -86,8 +88,16 @@
 }
 
 .modal.show {
-    display: block;
+    visibility: visible;
     opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+/* When hiding the modal, we'll start the transition */
+.modal.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s 0.5s;
 }
 
 .modalContent {
@@ -101,6 +111,15 @@
     height: 75%;
     overflow: auto;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: transform 0.5s ease;
+}
+
+.modal.show .modalContent {
+    transform: scale(1);
+}
+
+.modal.hide .modalContent {
+    transform: scale(0.95);
 }
 
 .modalHeader {

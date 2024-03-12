@@ -2,40 +2,44 @@
 document.querySelectorAll('.content-wrapper').forEach(item => {
     item.addEventListener('click', function() {
         var modalId = this.getAttribute('data-modal');
-        document.getElementById(modalId).style.display = 'block';
-        document.body.classList.add('no-scroll')
+        document.getElementById(modalId).classList.add('show');
+        document.body.classList.add('no-scroll');
     });
 });
+
+function closeModal(modal) {
+    modal.classList.add('hide');
+
+    modal.addEventListener('transitionend', function handler(event) {
+        if (event.propertyName === 'opacity') {
+            modal.classList.remove('show', 'hide');
+            modal.removeEventListener('transitionend', handler);
+        }
+    }, { once: true });
+}
 
 document.querySelectorAll('.close').forEach(item => {
-    item.addEventListener('click', function(event) {
-        event.stopPropagation(); // Prevent the modal from reopening
-        this.closest('.modal').style.display = 'none';
-        document.body.classList.remove('no-scroll')
+    item.addEventListener('click', function() {
+        const modal = this.closest('.modal');
+        closeModal(modal);
+        document.body.classList.remove('no-scroll');
     });
 });
 
+// Close modal by clicking outside of it
 window.addEventListener('click', function(event) {
-    document.querySelectorAll('.modal').forEach(function(modal) {
-        if (event.target === modal) {
-            modal.style.display = "none";
-            document.body.classList.remove('no-scroll')
-        }
-    });
-});
-
-window.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape') {
-        document.querySelectorAll('.modal').forEach(function(modal) {
-            modal.style.display = "none";
-            document.body.classList.remove('no-scroll')
-        });
+    if (event.target.classList.contains('modal')) {
+        closeModal(event.target);
+        document.body.classList.remove('no-scroll');
     }
 });
 
-window.addEventListener('click', function(event) {
-    if (event.target.classList.contains('modal')) {
-        event.target.style.display = "none";
-        document.body.classList.remove('no-scroll')
+// Close modal with Escape key
+window.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        document.querySelectorAll('.modal.show').forEach(modal => {
+            closeModal(modal);
+            document.body.classList.remove('no-scroll');
+        });
     }
 });
