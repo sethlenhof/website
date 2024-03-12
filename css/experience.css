@@ -170,5 +170,44 @@
     cursor: pointer;
 }
 
+.skills-container {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Spacing below the container for the line and skills */
+}
 
+.skills-heading {
+    padding-top: 2rem;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+}
 
+.relatedSkills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill-card {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card img{
+    height: 65px;
+    width: auto;
+    object-fit: contain;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
