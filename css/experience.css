@@ -153,6 +153,15 @@
     padding-right: 1rem;
 }
 
+.project-bullets{
+    padding: 1rem;
+    list-style: circle;
+}
+
+.project-bullets li{
+    padding: 0.25rem;
+}
+
 .close {
     color: #aaa;
     font-size: 28px;

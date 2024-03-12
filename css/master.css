@@ -85,14 +85,6 @@ nav a:hover:not(.current){
     padding-bottom: .5rem;
 }
 
-.project-bullets{
-    padding-left: 2rem;
-    padding-top: 1rem;
-    margin: 0px;
-    list-style: circle;
-
-}
-
 .project {
     padding-left: 0.5rem;
     padding-top: 1rem;
