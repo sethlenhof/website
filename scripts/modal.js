@@ -11,6 +11,7 @@ document.querySelectorAll('.close').forEach(item => {
     item.addEventListener('click', function(event) {
         event.stopPropagation(); // Prevent the modal from reopening
         this.closest('.modal').style.display = 'none';
+        document.body.classList.remove('no-scroll')
     });
 });
 
@@ -18,6 +19,7 @@ window.addEventListener('click', function(event) {
     document.querySelectorAll('.modal').forEach(function(modal) {
         if (event.target === modal) {
             modal.style.display = "none";
+            document.body.classList.remove('no-scroll')
         }
     });
 });
@@ -26,6 +28,7 @@ window.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
         document.querySelectorAll('.modal').forEach(function(modal) {
             modal.style.display = "none";
+            document.body.classList.remove('no-scroll')
         });
     }
 });
@@ -33,5 +36,6 @@ window.addEventListener('keydown', function(event) {
 window.addEventListener('click', function(event) {
     if (event.target.classList.contains('modal')) {
         event.target.style.display = "none";
+        document.body.classList.remove('no-scroll')
     }
 });
