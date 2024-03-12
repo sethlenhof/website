@@ -17,6 +17,12 @@ body{
     font-family: var(--mainfont);
     overflow-y: scroll;
 }
+
+.no-scroll{
+    overflow: hidden;
+    height: 100%;
+}
+
 h2{
     margin: 0;
     padding: 0;
@@ -74,7 +80,7 @@ nav a:hover:not(.current){
     background: var(--background);
 }
 
-.section h1{
+.sectionHeader{
     border-bottom: 2px solid white;
     padding-bottom: .5rem;
 }
