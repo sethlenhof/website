@@ -85,27 +85,6 @@ nav a:hover:not(.current){
     padding-bottom: .5rem;
 }
 
-.project {
-    padding-left: 0.5rem;
-    padding-top: 1rem;
-    display: flex;
-    align-items: center;
-
-}
-
-.project .project-name{
-    margin-right: 10px;
-    padding: 0px;
-    margin: 0px;
-}
-
-.project .time {
-    font-weight: normal;
-    margin-left: 10px;
-    margin: 0px;
-
-}
-
 #home{
     height: 97vh;
     display: flex;
