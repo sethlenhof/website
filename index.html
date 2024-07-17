@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/skills.css" />
 		<link rel="stylesheet" href="css/about.css" />
 		<link rel="stylesheet" href="css/experience.css" />
+		<link rel="stylesheet" href="css/projects.css" />
 		<script src="scripts/navbar.js"></script>
 		<link
 			rel="stylesheet"
@@ -72,6 +73,7 @@
 				<h1>Seth Lenhof</h1>
 				<img src="resources/me.jpg" alt="Profile Picture" />
 				<h2>UCF Computer Science B.S. Senior</h2>
+				<h2>Graduating Fall 2024</h2>
 			</div>
 		</div>
 		<div class="section" id="about">
@@ -348,7 +350,9 @@
 										<h2>HTML</h2>
 									</div>
 									<div class="skill-card">
-										<img src="resources/skillLogos/agile.png" alt="Agile Logo" />
+										<img
+											src="resources/skillLogos/agile.png"
+											alt="Agile Logo" />
 										<h2>Agile</h2>
 									</div>
 									<div class="skill-card">
@@ -358,19 +362,27 @@
 										<h2>SQL</h2>
 									</div>
 									<div class="skill-card">
-										<img src="resources/skillLogos/gitlab.svg" alt="GitLogo Logo" />
+										<img
+											src="resources/skillLogos/gitlab.svg"
+											alt="GitLogo Logo" />
 										<h2>GitLab</h2>
 									</div>
 									<div class="skill-card">
-										<img src="resources/skillLogos/linux.svg" alt="Linux Logo" />
+										<img
+											src="resources/skillLogos/linux.svg"
+											alt="Linux Logo" />
 										<h2>Linux</h2>
 									</div>
 									<div class="skill-card">
-										<img src="resources/skillLogos/docker.svg" alt="Docker Logo" />
+										<img
+											src="resources/skillLogos/docker.svg"
+											alt="Docker Logo" />
 										<h2>Docker</h2>
 									</div>
 									<div class="skill-card">
-										<img src="resources/skillLogos/maven.svg" alt="Slack Logo" />
+										<img
+											src="resources/skillLogos/maven.svg"
+											alt="Slack Logo" />
 										<h2>Maven</h2>
 									</div>
 								</div>
@@ -436,7 +448,9 @@
 										<h2>Slack</h2>
 									</div>
 									<div class="skill-card">
-										<img src="resources/skillLogos/macos.svg" alt="MacOS Logo" />
+										<img
+											src="resources/skillLogos/macos.svg"
+											alt="MacOS Logo" />
 										<h2>MacOS</h2>
 									</div>
 									<div class="skill-card">
@@ -452,67 +466,144 @@
 		</div>
 		<div class="section" id="projects">
 			<h1 class="sectionHeader">Projects</h1>
-			<div class="horizontal-section">
-				<div class="summary">
-					<div class="background"></div>
-					<div class="content-wrapper" data-modal="LeetSocial">
-						<span class="expand-icon">+</span>
-						<img src="resources/LeetSocial/leetSocial.jpg" alt="LeetSocial Logo"/>
-						<h2>LeetSocial</h2>
+			<!-- here i want to make my project clickable modals
+			ideally i want to have 2 per row and 3 or so colums
+			each modal will have a svg logo or image, with the title and a short description -->
+
+			<!-- start with initial layout of first project -->
+			<div class="project-container">
+				<div class="openModalBtn" data-modal="LeetSocial">
+					<div class="button-content">
+						<span class="expand-button">+</span>
+						<img
+							src="resources/LeetSocial/leetSocial.svg"
+							alt="LeetSocial Logo"
+							class="button-logo" />
+						<div class="button-text">
+							<h1>LeetSocial</h1>
+							<h3>
+								This is a short description of my project. It explains the main
+								idea and purpose of the project and whether it was successful or
+								not.
+							</h3>
+						</div>
 					</div>
-					<div class="modal" id="LeetSocial">
-						<div class="modalContent">
-							<div class="modalHeader">
-								<span class="close">x</span>
-								<img src="resources/LeetSocial/leetSocial.jpg" alt="LeetSocial Logo" />
-								<h1>LeetSocial</h1>
-							</div>
-							<div class="project-images">
-							</div>
-							<ul class="project-bullets">
-								<li>
-									<h2>
-										Developed a social media platform for LeetCode users to share their scores and compete on leaderboards with friends.
-									</h2>
-								</li>
-								<li>
-									<h2>
-										Utilized React-native, Node.js, and MongoDB to develop a full
-										stack mobile application.
-									</h2>
-								</li>
-								<li>
-									<h2>
-										Implemented a RESTful API to allow users to interact with the site and graphQL to get information from LeetCode API.
-									</h2>
-								</li>
-							</ul>
-							<div class="skills-container">
-								<h2 class="skills-heading">Related Skills</h2>
-								<div class="relatedSkills">
-									<div class="skill-card">
-										<img src="resources/react-native.svg" alt="react-native Logo" />
-										<h2>React-native</h2>
-									</div>
-									<div class="skill-card">
-										<img src="resources/express.svg" alt="Express Logo" />
-										<h2>Express</h2>
-									</div>
-									<div class="skill-card">
-										<img src="resources/nodejs.svg" alt="Node.js Logo" />
-										<h2>Node.js</h2>
-									</div>
-									<div class="skill-card">
-										<img src="resources/mongodb.svg" alt="MongoDB Logo" />
-										<h2>MongoDB</h2>
-									</div>
-									<div class="skill-card">
-										<img src="resources/gitlab.svg" alt="GitHub Logo" />
-										<h2>GitHub</h2>
-									</div>
-								</div>
-							</div>
+				</div>
+				<div class="openModalBtn" data-modal="LeetSocial">
+					<div class="button-content">
+						<span class="expand-button">+</span>
+						<img
+							src="resources/LeetSocial/leetSocial.svg"
+							alt="LeetSocial Logo"
+							class="button-logo" />
+						<div class="button-text">
+							<h1>LeetSocial</h1>
+							<h3>
+								This is a short description of my project. It explains the main
+								idea and purpose of the project and whether it was successful or
+								not.
+							</h3>
+						</div>
 					</div>
+				</div>
+				<div class="openModalBtn" data-modal="LeetSocial">
+					<div class="button-content">
+						<span class="expand-button">+</span>
+						<img
+							src="resources/LeetSocial/leetSocial.svg"
+							alt="LeetSocial Logo"
+							class="button-logo" />
+						<div class="button-text">
+							<h1>LeetSocial</h1>
+							<h3>
+								This is a short description of my project. It explains the main
+								idea and purpose of the project and whether it was successful or
+								not.
+							</h3>
+						</div>
+					</div>
+				</div>
+				<div class="openModalBtn" data-modal="LeetSocial">
+					<div class="button-content">
+						<span class="expand-button">+</span>
+						<img
+							src="resources/LeetSocial/leetSocial.svg"
+							alt="LeetSocial Logo"
+							class="button-logo" />
+						<div class="button-text">
+							<h1>LeetSocial</h1>
+							<h3>
+								This is a short description of my project. It explains the main
+								idea and purpose of the project and whether it was successful or
+								not.
+							</h3>
+						</div>
+					</div>
+				</div>
+				<div class="openModalBtn" data-modal="LeetSocial">
+					<div class="button-content">
+						<span class="expand-button">+</span>
+						<img
+							src="resources/LeetSocial/leetSocial.svg"
+							alt="LeetSocial Logo"
+							class="button-logo" />
+						<div class="button-text">
+							<h1>LeetSocial</h1>
+							<h3>
+								This is a short description of my project. It explains the main
+								idea and purpose of the project and whether it was successful or
+								not.
+							</h3>
+						</div>
+					</div>
+				</div>
+				<div class="openModalBtn" data-modal="LeetSocial">
+					<div class="button-content">
+						<span class="expand-button">+</span>
+						<img
+							src="resources/LeetSocial/leetSocial.svg"
+							alt="LeetSocial Logo"
+							class="button-logo" />
+						<div class="button-text">
+							<h1>LeetSocial</h1>
+							<h3>
+								This is a short description of my project. It explains the main
+								idea and purpose of the project and whether it was successful or
+								not.
+							</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- the modal -->
+			<div id="LeetSocial" class="projectModal">
+				<div class="modal-content">
+					<span class="close">x</span>
+					<img
+						src="resources/LeetSocial/leetSocial.svg"
+						alt="Leet Social"
+						class="project-image" />
+					<h2>Leet Social</h2>
+					<p>
+						This is a short description of my project. It explains the main idea
+						and purpose.
+					</p>
+					<!-- project bullets -->
+					<ul class="project-bullets">
+						<li>
+							<h2>
+								Implemented a full stack social media platform using React,
+								Node.js, and MongoDB
+							</h2>
+						</li>
+						<li>
+							<h2>Utilized JWT for user authentication and authorization</h2>
+						</li>
+						<li>
+							<h2>Implemented a RESTful API for CRUD operations</h2>
+						</li>
+					</ul>
+					<!-- related skills -->
 				</div>
 			</div>
 		</div>
@@ -530,5 +621,6 @@
 		</div>
 		<script src="scripts/skills.js"></script>
 		<script src="scripts/modal.js"></script>
+		<script src="scripts/projects.js"></script>
 	</body>
 </html>
