@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
           var modalId = this.getAttribute('data-modal');
           var modal = document.getElementById(modalId);
           modal.style.display = "block";
+          document.body.classList.add('no-scroll');
       });
   });
 
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       button.addEventListener('click', function() {
           var modal = this.closest('.projectModal');
           modal.style.display = "none";
+          document.body.classList.remove('no-scroll');
       });
   });
 
@@ -26,6 +28,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
   window.addEventListener('click', function(event) {
       if (event.target.classList.contains('projectModal')) {
           event.target.style.display = "none";
+          document.body.classList.remove('no-scroll');
       }
   });
 });
+
+let currentSlide = 0;
+
+function moveCarousel(n) {
+    const carousel = document.querySelector('.carousel');
+    const images = document.querySelectorAll('.carousel img');
+    currentSlide += n;
+
+    if (currentSlide >= images.length) {
+        currentSlide = 0;
+    } else if (currentSlide < 0) {
+        currentSlide = images.length - 1;
+    }
+
+    const translateX = -currentSlide * 100;
+    carousel.style.transform = `translateX(${translateX}%)`;
+}

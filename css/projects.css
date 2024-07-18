@@ -52,6 +52,7 @@
 
 .button-logo {
     max-width: 125px;
+    overflow: hidden;
     height: auto;
     margin: 0 20px;
     border-radius: 10px;
@@ -86,21 +87,26 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    backdrop-filter: blur(8px);
 }
 
 .modal-content {
     background-color: var(--background);
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #000;
+    background-color: #f5f5dc;
+    color: #000;
     width: 80%;
-    max-width: 600px;
-    text-align: center;
+    max-width: 80vw;
+    text-align: left;
+    border-radius: 25px;
+    position: relative;
 }
 
 .close {
+    position: absolute;
     color: #aaa;
     float: right;
     font-size: 28px;
@@ -117,11 +123,61 @@
 .project-image {
     max-width: 100%;
     height: auto;
-    margin: 20px 0;
+    margin: 0 20px;
+    border-radius: 10px;
 }
 
-.project-bullets {
-    list-style-type: none;
+.project-bullets > li > p {
+    margin: 0;
     padding: 0;
-    text-align: left;
+}
+
+.image-wheel {
+    position: relative;
+    max-width: 50%; /* Adjust the max-width to 65% of its current size */
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images {
+    display: flex;
+    width: 100%;
+}
+
+.carousel img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
