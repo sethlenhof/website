@@ -658,9 +658,11 @@
 						</li>
 					</ul>
 					<!-- image wheel -->
-					<div class="image-wheel">
+					<div class="carousel-container">
 						<div class="carousel">
-							<div class="carousel-images">
+							<!-- <div class="carousel" id="LeetSocialCarousel"> -->
+
+							<div class="carousel-inner">
 								<img
 									src="resources/LeetSocial/LeetSocial1.jpg"
 									alt="LeetSocial Login Screen" />
@@ -672,8 +674,12 @@
 									alt="LeetSocial Mobile leaderboards" />
 							</div>
 						</div>
-						<button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
-						<button class="next" onclick="moveCarousel(1)">&#10095;</button>
+						<button class="prev" onclick="moveCarousel(-1, 'LeetSocial')">
+							&#10094;
+						</button>
+						<button class="next" onclick="moveCarousel(1, 'LeetSocial')">
+							&#10095;
+						</button>
 					</div>
 				</div>
 			</div>
@@ -751,10 +757,10 @@
 							</p>
 						</li>
 					</ul>
-					<!-- image wheel -->
-					<div class="image-wheel">
+					<div class="carousel-container">
+						<!-- <div class="carousel" id="StoryForgeCarousel"> -->
 						<div class="carousel">
-							<div class="carousel-images">
+							<div class="carousel-inner">
 								<img
 									src="resources/StoryForge/storyforge1.png"
 									alt="StoryForge character creation" />
@@ -769,8 +775,12 @@
 									alt="StoryForge Game" />
 							</div>
 						</div>
-						<button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
-						<button class="next" onclick="moveCarousel(1)">&#10095;</button>
+						<button class="prev" onclick="moveCarousel(-1, 'StoryForge')">
+							&#10094;
+						</button>
+						<button class="next" onclick="moveCarousel(1, 'StoryForge')">
+							&#10095;
+						</button>
 					</div>
 				</div>
 			</div>
