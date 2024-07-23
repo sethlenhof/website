@@ -120,13 +120,6 @@
     cursor: pointer;
 }
 
-.project-image {
-    max-width: 100%;
-    height: auto;
-    margin: 0 20px;
-    border-radius: 10px;
-}
-
 .project-bullets > li > p {
     margin: 0;
     padding: 0;
@@ -134,10 +127,9 @@
 
 .carousel-container {
     position: relative;
-    max-width: 50%;
+    width: 50%;
     margin: auto;
     overflow: hidden;
-    border: 2px solid #000;
     border-radius: 10px;
 }
 
@@ -148,13 +140,24 @@
 
 .carousel-inner {
     display: flex;
+    width: 100%;
     transition: transform 0.5s ease-in-out;
 }
 
-.carousel-inner img {
-    width: 100%;
-    height: auto;
-    display: block;
+.carousel-item {
+    flex: 0 0 auto;
+    width: 100%; /* Each item takes up full carousel width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item img {
+    max-height: 35vw; /* Adjust based on your desired height */
+    width: auto;
+    max-width: 100%;
     border-radius: 10px;
 }
 
