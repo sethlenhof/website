@@ -158,7 +158,6 @@ nav a:hover:not(.current){
 
 #socials{
     height: 3.75rem;
-    /* position: absolute; */
     bottom: 1vh;
     padding-top: .6rem;
     padding-bottom: .6rem;
@@ -173,8 +172,8 @@ nav a:hover:not(.current){
     justify-content: center;
     align-items: center;
     position: fixed;
-
 }
+
 #socials div{
     position: relative;
     display: inline-flex;

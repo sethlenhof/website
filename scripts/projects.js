@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         button.addEventListener('click', function() {
             var modalId = this.getAttribute('data-modal');
             var modal = document.getElementById(modalId);
-            modal.style.display = "block";
+            modal.classList.remove('hide');
+            modal.classList.add('show');
             document.body.classList.add('no-scroll');
-            resetCarousel(modalId);
         });
     });
 
@@ -19,8 +19,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // Attach click event to each close button
     closeButtons.forEach(button => {
         button.addEventListener('click', function() {
-            var modal = this.closest('.projectModal');
-            modal.style.display = "none";
+            closeModal(this.closest('.projectModal'));
             document.body.classList.remove('no-scroll');
         });
     });
@@ -28,11 +27,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // Close modal when clicking outside of modal content
     window.addEventListener('click', function(event) {
         if (event.target.classList.contains('projectModal')) {
-            event.target.style.display = "none";
+            closeModal(event.target);
             document.body.classList.remove('no-scroll');
         }
     });
 });
+
+function closeModal(modal) {
+    modal.classList.add('hide');
+
+    modal.addEventListener('transitionend', function handler(event) {
+        if (event.propertyName === 'opacity') {
+            modal.classList.remove('show');
+            modal.removeEventListener('transitionend', handler);
+        }
+    }, { once: true });
+}
+
 
 function resetCarousel(modalId) {
     const carousel = document.querySelector(`#${modalId} .carousel-inner`);

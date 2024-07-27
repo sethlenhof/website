@@ -81,10 +81,11 @@
 			<div id="about-columns">
 				<div id="about-text">
 					<h3>
-						Hello, I'm Seth! I am a Computer Science student at the University
-						of Central Florida, with a passion for software development. I am a
-						collaborator, who enjoys helping others where possible whether it be
-						at work or school. I am always looking to learn and grow.
+						Hello, I &apos;m Seth! I am a Computer Science student at the
+						University of Central Florida, with a passion for software
+						development. I am a collaborator, who enjoys helping others where
+						possible whether it be at work or school. I am always looking to
+						learn and grow.
 					</h3>
 				</div>
 				<div id="about-resume">
@@ -472,11 +473,27 @@
 
 			<!-- start with initial layout of first project -->
 			<div class="project-container">
+				<div class="openModalBtn" data-modal="UniScheduler">
+					<div class="button-content">
+						<span class="expand-button">+</span>
+						<img
+							src="resources/uniProj/uniProj.jpg"
+							alt="University Schedule Project Logo"
+							class="button-logo" />
+						<div class="button-text">
+							<h1>University Event Scheduler</h1>
+							<h3>
+								Webapp that allows Clubs to organize events and students to join
+								clubs and sign up for events.
+							</h3>
+						</div>
+					</div>
+				</div>
 				<div class="openModalBtn" data-modal="LeetSocial">
 					<div class="button-content">
 						<span class="expand-button">+</span>
 						<img
-							src="resources/LeetSocial/leetSocial.svg"
+							src="resources/LeetSocial/leetsocial.jpeg"
 							alt="LeetSocial Logo"
 							class="button-logo" />
 						<div class="button-text">
@@ -504,82 +521,139 @@
 						</div>
 					</div>
 				</div>
-				<div class="openModalBtn" data-modal="LeetSocial">
+				<div class="openModalBtn" data-modal="Dequeue">
 					<div class="button-content">
 						<span class="expand-button">+</span>
 						<img
-							src="resources/LeetSocial/leetSocial.svg"
-							alt="LeetSocial Logo"
+							src="resources/Dequeue/dequeueThumbnail.png"
+							alt="Dequeue Logo"
 							class="button-logo" />
 						<div class="button-text">
-							<h1>LeetSocial</h1>
+							<h1>Dequeue</h1>
 							<h3>
-								This is a short description of my project. It explains the main
-								idea and purpose of the project and whether it was successful or
-								not.
-							</h3>
-						</div>
-					</div>
-				</div>
-				<div class="openModalBtn" data-modal="LeetSocial">
-					<div class="button-content">
-						<span class="expand-button">+</span>
-						<img
-							src="resources/LeetSocial/leetSocial.svg"
-							alt="LeetSocial Logo"
-							class="button-logo" />
-						<div class="button-text">
-							<h1>LeetSocial</h1>
-							<h3>
-								This is a short description of my project. It explains the main
-								idea and purpose of the project and whether it was successful or
-								not.
-							</h3>
-						</div>
-					</div>
-				</div>
-				<div class="openModalBtn" data-modal="LeetSocial">
-					<div class="button-content">
-						<span class="expand-button">+</span>
-						<img
-							src="resources/LeetSocial/leetSocial.svg"
-							alt="LeetSocial Logo"
-							class="button-logo" />
-						<div class="button-text">
-							<h1>LeetSocial</h1>
-							<h3>
-								This is a short description of my project. It explains the main
-								idea and purpose of the project and whether it was successful or
-								not.
-							</h3>
-						</div>
-					</div>
-				</div>
-				<div class="openModalBtn" data-modal="LeetSocial">
-					<div class="button-content">
-						<span class="expand-button">+</span>
-						<img
-							src="resources/LeetSocial/leetSocial.svg"
-							alt="LeetSocial Logo"
-							class="button-logo" />
-						<div class="button-text">
-							<h1>LeetSocial</h1>
-							<h3>
-								This is a short description of my project. It explains the main
-								idea and purpose of the project and whether it was successful or
-								not.
+								Dequeue is a is a web application that allows users to create
+								and run shortcuts on their computer from their phone.
 							</h3>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- the modal -->
-			<div id="LeetSocial" class="projectModal">
+			<div id="UniScheduler" class="projectModal hide">
 				<div class="modal-content">
 					<span class="close">X</span>
 					<div class="modalHeader">
 						<img
-							src="resources/LeetSocial/leetSocial.svg"
+							src="resources/uniProj/uniProj.jpg"
+							alt="University Event Scheduler Logo"
+							class="project-image" />
+						<h1>University Event Scheduler</h1>
+					</div>
+					<h2>Related Skills</h2>
+					<div class="skills-container">
+						<div class="relatedSkills">
+							<div class="skill-card">
+								<img
+									src="resources/skillLogos/react-native.svg"
+									alt="react-native logo" />
+								<h2>react-native</h2>
+							</div>
+							<div class="skill-card">
+								<img src="resources/skillLogos/oracleSQL.svg" alt="SQL Logo" />
+								<h2>SQL</h2>
+							</div>
+							<div class="skill-card">
+								<img src="resources/skillLogos/git.svg" alt="Git Logo" />
+								<h2>Git</h2>
+							</div>
+							<div class="skill-card">
+								<img
+									src="resources/skillLogos/Project Manager Icon.svg"
+									alt="Project Management Logo" />
+								<h2>Project Management</h2>
+							</div>
+						</div>
+					</div>
+					<h2>Description</h2>
+					<p>
+						LeetSocial is a project that I worked on with a team 5 people. My
+						role in the project was Project Manager, Database creator, and
+						Mobile developer. The project was a social media platform that
+						allowed users to link their LeetCode account, and add friends to
+						create leaderboards and challenges between individuals.
+					</p>
+					<!-- project bullets -->
+					<ul class="project-bullets">
+						<li>
+							<p>
+								Created a React application for scheduling club events at a
+								school in different locations
+							</p>
+						</li>
+						<li>
+							<p>
+								Utilized 3rd normal form and SQL stored procedures to perform
+								operations on the database and prevent overlapping events
+							</p>
+						</li>
+						<li>
+							<p>
+								Allowed for 3 types of users, Admins, Campus Admins, and
+								students to access different features of the app
+							</p>
+						</li>
+						<li>
+							<p>
+								Implemented express APIs to call SQL procedures to populate
+								information on the page using cookies for authentication
+							</p>
+						</li>
+					</ul>
+					<div class="carousel-container">
+						<div class="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item">
+									<img
+										src="resources/uniProj/uniProj1.jpeg"
+										alt="LeetSocial Login Screen" />
+								</div>
+								<div class="carousel-item">
+									<img
+										src="resources/uniProj/uniproj2.png"
+										alt="LeetSocial Web leaderboards" />
+								</div>
+								<div class="carousel-item">
+									<img
+										src="resources/uniProj/uniproj3.png"
+										alt="LeetSocial Mobile leaderboards" />
+								</div>
+								<div class="carousel-item">
+									<img
+										src="resources/uniProj/uniproj4.jpeg"
+										alt="LeetSocial Mobile leaderboards" />
+								</div>
+								<div class="carousel-item">
+									<img
+										src="resources/uniProj/uniproj.gif"
+										alt="LeetSocial Mobile leaderboards" />
+								</div>
+							</div>
+						</div>
+						<button class="prev" onclick="moveCarousel(-1, 'UniScheduler')">
+							&#10094;
+						</button>
+						<button class="next" onclick="moveCarousel(1, 'UniScheduler')">
+							&#10095;
+						</button>
+					</div>
+				</div>
+			</div>
+			<div id="LeetSocial" class="projectModal hide">
+				<div class="modal-content">
+					<span class="close">X</span>
+					<div class="modalHeader">
+						<img
+							src="resources/LeetSocial/leetsocial.jpeg"
 							alt="Leet Social"
 							class="project-image" />
 						<h1>LeetSocial</h1>
@@ -686,7 +760,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="StoryForge" class="projectModal">
+			<div id="StoryForge" class="projectModal hide">
 				<div class="modal-content">
 					<span class="close">x</span>
 					<div class="modalHeader">
@@ -723,13 +797,13 @@
 					</div>
 					<h2>Description</h2>
 					<p>
-						StoryForge is our group's submission for the ShellHacks 2023
-						hackathon. It's a web application that lets users play Dungeons and
+						StoryForge is our group &apos;s submission for the ShellHacks 2023
+						hackathon. It is a web application that lets users play Dungeons and
 						Dragons with an AI Dungeon Master. This AI manages the game details
 						and crafts the story, allowing players to interact freely by typing
 						to the Dungeon Master. Additionally, we included convenient quick
 						actions and dynamic environmental effects on the screen based on the
-						player's in-game location
+						player &apos;s in-game location
 					</p>
 					<!-- project bullets -->
 					<ul class="project-bullets">
@@ -742,8 +816,8 @@
 						</li>
 						<li>
 							<p>
-								Navigated through ChatGPT’s functionalities to derive responses
-								in a JSON format, ensuring compatibility and seamless
+								Navigated through ChatGPT &apos;s functionalities to derive
+								responses in a JSON format, ensuring compatibility and seamless
 								integration with our project
 							</p>
 						</li>
@@ -789,6 +863,109 @@
 							&#10094;
 						</button>
 						<button class="next" onclick="moveCarousel(1, 'StoryForge')">
+							&#10095;
+						</button>
+					</div>
+				</div>
+			</div>
+			<div id="Dequeue" class="projectModal hide">
+				<div class="modal-content">
+					<span class="close">x</span>
+					<div class="modalHeader">
+						<img
+							src="resources/Dequeue/dequeueThumbnail.png"
+							alt="StoryForge"
+							class="project-image" />
+						<h1>Dequeue</h1>
+					</div>
+					<h2>Related Skills</h2>
+					<div class="skills-container">
+						<div class="relatedSkills">
+							<div class="skill-card">
+								<img src="resources/skillLogos/js.svg" alt="JavaScript" />
+								<h2>JavaScript</h2>
+							</div>
+							<div class="skill-card">
+								<img
+									src="resources/skillLogos/react-native.svg"
+									alt="mySQL Logo" />
+								<h2>React Native</h2>
+							</div>
+							<div class="skill-card">
+								<img src="resources/skillLogos/git.svg" alt="Git Logo" />
+								<h2>Git</h2>
+							</div>
+							<div class="skill-card">
+								<img
+									src="resources/skillLogos/websocket.svg"
+									alt="Websocket Logo" />
+								<h2>Websockets</h2>
+							</div>
+						</div>
+					</div>
+					<h2>Description</h2>
+					<p>
+						Dequeue is our team &apos;s submission for a semester-long hackathon
+						organized by KnightHacks. The idea was inspired by the Stream Deck,
+						a device used by streamers to visually manage computer shortcuts.
+						Instead of memorizing numerous shortcuts or purchasing an expensive
+						device like the Stream Deck, Dequeue enables you to display and
+						quickly access shortcuts directly on your phone. The mobile app for
+						Dequeue was developed using React Native, while the desktop app was
+						built with Electron, ensuring compatibility across multiple
+						platforms. All data is stored locally on the computer and
+						communicated to the phone via LAN.
+					</p>
+					<!-- project bullets -->
+					<ul class="project-bullets">
+						<li>
+							<p>
+								Created an electron app for desktop to allow users to create
+								commands to run on computer
+							</p>
+						</li>
+						<li>
+							<p>
+								Designed and implemented mobile app using React Native that
+								communicates with the desktop app
+							</p>
+						</li>
+						<li>
+							<p>
+								Utilized Node.js based web sockets to relay commands to the
+								desktop based on users input on the mobile app
+							</p>
+						</li>
+					</ul>
+					<div class="carousel-container">
+						<div class="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item">
+									<img
+										src="resources/Dequeue/dequeue1.gif"
+										alt="Dequeue Run shortcut" />
+								</div>
+								<div class="carousel-item">
+									<img
+										src="resources/Dequeue/dequeue2.gif"
+										alt="Dequeue Pair Computer" />
+								</div>
+								<div class="carousel-item">
+									<img
+										src="resources/Dequeue/dequeue3.gif"
+										alt="Dequeue Create Action" />
+								</div>
+								<div class="carousel-item">
+									<img
+										src="resources/Dequeue/dequeue4.gif"
+										alt="Dequeue Get IP" />
+								</div>
+							</div>
+						</div>
+						<button class="prev" onclick="moveCarousel(-1, 'Dequeue')">
+							&#10094;
+						</button>
+						<button class="next" onclick="moveCarousel(1, 'Dequeue')">
 							&#10095;
 						</button>
 					</div>
