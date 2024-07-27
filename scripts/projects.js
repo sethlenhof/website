@@ -31,6 +31,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
             document.body.classList.remove('no-scroll');
         }
     });
+
+    // Close modal with Escape key
+    window.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeModal(document.querySelector('.projectModal.show'));
+            document.body.classList.remove('no-scroll');
+        }
+    });
 });
 
 function closeModal(modal) {
