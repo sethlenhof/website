@@ -102,7 +102,7 @@
 .modalContent {
     position: relative;
     background-color: #f5f5dc;
-    margin: 10% auto;
+    margin: calc(12.5svh - 20px);
     padding: 20px;
     border: 1px solid #888;
     border-radius: 25px;
