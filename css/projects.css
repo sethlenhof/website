@@ -131,6 +131,10 @@
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: black;
 }
 
 .carousel {
@@ -155,7 +159,7 @@
 }
 
 .carousel-item img {
-    max-height: 35vw; /* Adjust based on your desired height */
+    max-height: 26vw; /* Adjust based on your desired height */
     width: auto;
     max-width: 100%;
     border-radius: 10px;
