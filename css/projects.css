@@ -4,6 +4,7 @@
     gap: 5rem; /* Adjust gap between the items */
     max-width: 80vw; /* Adjust the max width as needed */
     margin: 0 auto;
+    padding: 2rem;
 }
 
 .openModalBtn {
