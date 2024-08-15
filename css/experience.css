@@ -121,12 +121,12 @@
     color: #000;
     position: relative;
     background-color: #f5f5dc;
-    margin: calc(12.5svh - 20px);
+    margin: 8vh auto;
     padding: 20px;
     border: 1px solid #888;
     border-radius: 25px;
-    width: 75vw;
-    height: 75vh;
+    height: var(--modal-height);
+    max-width: var(--modal-width);
     overflow: auto;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     transition: transform 0.5s ease;
@@ -158,9 +158,9 @@
 }
 
 .modalHeader #LMlogo{
-    width: 30vw;
+    width: 20vw;
     height: auto;
-    object-fit: none;
+    object-fit: contain;
     padding: 0;
     padding-right: 1rem;
 }
