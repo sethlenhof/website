@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     // Get all buttons that open modals
-    var buttons = document.querySelectorAll('.content-wrapper');
-    
+    var buttons = document.querySelectorAll('.experienceButton');
+
     // Iterate over buttons and attach click event
     buttons.forEach(button => {
         button.addEventListener('click', function() {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // Close modal when clicking outside of modal content
     window.addEventListener('click', function(event) {
         if (event.target.classList.contains('modal')) {
-            closeModal(event.target);
+            closeModal(this.document.querySelector('.modal.show'));
             document.body.classList.remove('no-scroll');
         }
     });

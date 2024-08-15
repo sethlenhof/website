@@ -2,14 +2,19 @@
 :root{
     --c-width: 50%;
     --java-width: 85%;
-    --javascript-width: 65%;
+    --javascript-width: 75%;
+    --cpp-width: 65%;
     --macos-width: 85%;
     --python-width: 60%;
     --sql-width: 65%;
-    --slack-width: 70%;
+    --slack-width: 100%;
     --windows-width: 80%;
     --linux-width: 75%;
-    --git-width: 70%;
+    --git-width: 90%;
+    --typescript-width: 70%;
+    --wix-width: 70%;
+    --docker-width: 50%;
+    --react-width: 75%;
 }
 
 .skill-container {
@@ -75,6 +80,16 @@
     animation: JavaScript 1.5s;
     animation-delay: var(--animation-delay, 0s);
 }
+.CPlusPlus.animate{
+    width: var(--cpp-width);
+    animation: C 1.5s;
+    animation-delay: var(--animation-delay, 0s);
+}
+.TypeScript.animate{
+    width: var(--typescript-width);
+    animation: TypeScript 1.5s;
+    animation-delay: var(--animation-delay, 0s);
+}
 .MacOS.animate{
     width: var(--macos-width);
     animation: MacOS 1.5s;
@@ -113,6 +128,25 @@
     animation-delay: var(--animation-delay, 0s);
 }
 
+.wix.animate{
+    width: var(--wix-width);
+    animation: Wix 1.5s;
+    animation-delay: var(--animation-delay, 0s);
+}
+
+.docker.animate{
+    width: var(--docker-width);
+    animation: Docker 1.5s;
+    animation-delay: var(--animation-delay, 0s);
+}
+
+.react.animate{
+    width: var(--react-width);
+    animation: React 1.5s;
+    animation-delay: var(--animation-delay, 0s);
+}
+
+
 .C{
     width: 0px;
 }
@@ -143,6 +177,26 @@
 }
 
 .Git{
+    width: 0px;
+}
+
+.CPP{
+    width: 0px;
+}
+
+.TypeScript{
+    width: 0px;
+}
+
+.wix{
+    width: 0px;
+}
+
+.docker{
+    width: 0px;
+}
+
+.react{
     width: 0px;
 }
 
@@ -227,5 +281,50 @@
     }
     100%{
         width: var(--git-width);
+    }
+}
+
+@keyframes CPlusPlus {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: var(--cpp-width);
+    }
+}
+
+@keyframes TypeScript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: var(--typescript-width);
+    }
+}
+
+@keyframes Wix {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: var(--wix-width);
+    }
+}
+
+@keyframes Docker {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: var(--docker-width);
+    }
+}
+
+@keyframes React {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: var(--react-width);
     }
 }
