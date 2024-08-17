@@ -87,7 +87,7 @@
     top: 0;
     width: 100vw;
     height: 100vh;
-    overflow: auto;
+    overflow-y: auto;
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     backdrop-filter: blur(8px);
     transition: opacity 0.5s ease;
