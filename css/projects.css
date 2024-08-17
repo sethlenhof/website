@@ -121,7 +121,7 @@
     color: #000;
     height: var(--modal-height);
     max-width: var(--modal-width);
-    overflow: auto;
+    overflow-y: auto;
     text-align: left;
     border-radius: 25px;
     position: relative;

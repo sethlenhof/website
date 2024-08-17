@@ -25,3 +25,19 @@ function highlightNavLinks() {
   
   // Listen for scroll events
   window.addEventListener('scroll', highlightNavLinks);
+  
+  // Listen for the scroll event on the entire document
+document.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrollPercentage = scrollTop / scrollHeight;
+
+  // Calculate new background position based on scroll percentage
+  const newBackgroundPosition = scrollPercentage * 100;
+
+  // Update the CSS variable with the new position
+  document.documentElement.style.setProperty('--scroll-position', `${newBackgroundPosition}%`);
+});
+
+// Initial setting to ensure it starts from the top
+document.documentElement.style.setProperty('--scroll-position', '0%');
